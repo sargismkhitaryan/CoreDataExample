@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F3D2164C751004FE44C /* PersonStack.swift */; };
+		9CBA1F482164D98E004FE44C /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F472164D98E004FE44C /* Managed.swift */; };
 		F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50872164027C00B43F52 /* AppDelegate.swift */; };
 		F1AB508A2164027C00B43F52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50892164027C00B43F52 /* ViewController.swift */; };
 		F1AB508D2164027C00B43F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB508B2164027C00B43F52 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		9CBA1F3D2164C751004FE44C /* PersonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStack.swift; sourceTree = "<group>"; };
+		9CBA1F472164D98E004FE44C /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 		F1AB50842164027C00B43F52 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AB50872164027C00B43F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1AB50892164027C00B43F52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9CBA1F462164D96B004FE44C /* CoreDataHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA1F472164D98E004FE44C /* Managed.swift */,
+			);
+			path = CoreDataHelpers;
+			sourceTree = "<group>";
+		};
 		F1AB507B2164027C00B43F52 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		F1AB50862164027C00B43F52 /* CoreDataExample */ = {
 			isa = PBXGroup;
 			children = (
+				9CBA1F462164D96B004FE44C /* CoreDataHelpers */,
 				9CBA1F3A2164C6DF004FE44C /* Model */,
 				9CBA1F3B2164C724004FE44C /* ViewControllers */,
 				9CBA1F3C2164C724004FE44C /* Views */,
@@ -169,6 +180,7 @@
 				9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */,
 				F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */,
 				F1AB50902164027C00B43F52 /* PeopleModel.xcdatamodeld in Sources */,
+				9CBA1F482164D98E004FE44C /* Managed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
