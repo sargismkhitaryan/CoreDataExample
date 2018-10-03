@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F3D2164C751004FE44C /* PersonStack.swift */; };
 		F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50872164027C00B43F52 /* AppDelegate.swift */; };
 		F1AB508A2164027C00B43F52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50892164027C00B43F52 /* ViewController.swift */; };
 		F1AB508D2164027C00B43F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB508B2164027C00B43F52 /* Main.storyboard */; };
-		F1AB50902164027C00B43F52 /* CoreDataExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1AB508E2164027C00B43F52 /* CoreDataExample.xcdatamodeld */; };
+		F1AB50902164027C00B43F52 /* PeopleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1AB508E2164027C00B43F52 /* PeopleModel.xcdatamodeld */; };
 		F1AB50922164027D00B43F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AB50912164027D00B43F52 /* Assets.xcassets */; };
 		F1AB50952164027D00B43F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB50932164027D00B43F52 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CBA1F3D2164C751004FE44C /* PersonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStack.swift; sourceTree = "<group>"; };
 		F1AB50842164027C00B43F52 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AB50872164027C00B43F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1AB50892164027C00B43F52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CBA1F3A2164C6DF004FE44C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1AB508E2164027C00B43F52 /* PeopleModel.xcdatamodeld */,
+				9CBA1F3D2164C751004FE44C /* PersonStack.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CBA1F3B2164C724004FE44C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9CBA1F3C2164C724004FE44C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1AB50892164027C00B43F52 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F1AB507B2164027C00B43F52 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +82,14 @@
 		F1AB50862164027C00B43F52 /* CoreDataExample */ = {
 			isa = PBXGroup;
 			children = (
+				9CBA1F3A2164C6DF004FE44C /* Model */,
+				9CBA1F3B2164C724004FE44C /* ViewControllers */,
+				9CBA1F3C2164C724004FE44C /* Views */,
 				F1AB50872164027C00B43F52 /* AppDelegate.swift */,
-				F1AB50892164027C00B43F52 /* ViewController.swift */,
 				F1AB508B2164027C00B43F52 /* Main.storyboard */,
 				F1AB50912164027D00B43F52 /* Assets.xcassets */,
 				F1AB50932164027D00B43F52 /* LaunchScreen.storyboard */,
 				F1AB50962164027D00B43F52 /* Info.plist */,
-				F1AB508E2164027C00B43F52 /* CoreDataExample.xcdatamodeld */,
 			);
 			path = CoreDataExample;
 			sourceTree = "<group>";
@@ -139,8 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1AB508A2164027C00B43F52 /* ViewController.swift in Sources */,
+				9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */,
 				F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */,
-				F1AB50902164027C00B43F52 /* CoreDataExample.xcdatamodeld in Sources */,
+				F1AB50902164027C00B43F52 /* PeopleModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,13 +370,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F1AB508E2164027C00B43F52 /* CoreDataExample.xcdatamodeld */ = {
+		F1AB508E2164027C00B43F52 /* PeopleModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				F1AB508F2164027C00B43F52 /* CoreDataExample.xcdatamodel */,
 			);
 			currentVersion = F1AB508F2164027C00B43F52 /* CoreDataExample.xcdatamodel */;
-			path = CoreDataExample.xcdatamodeld;
+			path = PeopleModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
