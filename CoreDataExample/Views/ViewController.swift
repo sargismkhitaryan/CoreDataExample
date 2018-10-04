@@ -15,7 +15,21 @@ class ViewController: UIViewController {
     
     var peopleContext: NSManagedObjectContext? {
         didSet {
-            print("people context: \(peopleContext)")
+            /* Fetch People from the persistent store.
+            let request = Person.sortedFetchRequest
+            request.fetchBatchSize = 20
+            let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: peopleContext!, sectionNameKeyPath: nil, cacheName: nil)
+            frc.delegate = self
+            try? frc.performFetch()
+            let person = frc.object(at: IndexPath(row: 0, section: 0))
+            print("persons: \(frc.fetchedObjects?.count)")
+            */
+            
+            /* Insert the person to the persistent store
+            peopleContext?.performChanges {
+                _ = Person.insert(into: self.peopleContext!, name: "Sargis", birthdate: Date())
+            }
+             */
         }
     }
     
@@ -49,3 +63,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+/* The Fetch Result Controller Delegate
+extension ViewController: NSFetchedResultsControllerDelegate {
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        print("controller will change context")
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        print("controller did change value")
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        print("controller did change content")
+    }
+}
+ */
