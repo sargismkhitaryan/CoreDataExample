@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController {
+class PeopleViewController: UIViewController {
     
     // MARK: - Properties
     
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    fileprivate var dataSource: CoreDataTableViewDataSource<ViewController>!
+    fileprivate var dataSource: CoreDataTableViewDataSource<PeopleViewController>!
     
     // MARK: - Overriden Methods
     
@@ -44,10 +44,10 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDelegate {
+extension PeopleViewController: UITableViewDelegate {
 }
 
-extension ViewController: CoreDataTableViewDataSourceDelegate {
+extension PeopleViewController: CoreDataTableViewDataSourceDelegate {
     func configure(_ cell: PersonTableViewCell, for object: Person) {
         let viewModel = PersonViewModel(person: object)
         cell.personViewModel = viewModel
