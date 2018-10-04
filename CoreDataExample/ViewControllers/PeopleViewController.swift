@@ -62,6 +62,15 @@ class PeopleViewController: UIViewController {
 }
 
 extension PeopleViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let actions = [UITableViewRowAction(style: .default, title: "Delete", handler: { (_, indexPath) in
+            self.peopleContext.performChanges {
+                let person = self.dataSource.object(at: indexPath)
+                self.peopleContext.delete(person)
+            }
+        })]
+        return actions
+    }
 }
 
 extension PeopleViewController: CoreDataTableViewDataSourceDelegate {

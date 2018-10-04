@@ -42,6 +42,12 @@ class CoreDataTableViewDataSource<Delegate: CoreDataTableViewDataSourceDelegate>
         tableView.reloadData()
     }
     
+    // MARK: - Public Methods
+    
+    func object(at indexPath: IndexPath) -> Object {
+        return fetchedResultsController.object(at: indexPath)
+    }
+    
     // MARK: - NSFetchedResultsControllerDelegate Methods
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
@@ -49,25 +55,34 @@ class CoreDataTableViewDataSource<Delegate: CoreDataTableViewDataSourceDelegate>
     }
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
-        guard let indexPath = newIndexPath else {
-            fatalError("IndexPath can't be nil")
-        }
         switch type {
         case .insert:
+            guard let indexPath = newIndexPath else {
+                fatalError("IndexPath can't be nil")
+            }
             tableView.insertRows(at: [indexPath], with: .automatic)
         case .update:
+            guard let indexPath = indexPath else {
+                fatalError("IndexPath can't be nil")
+            }
             guard let cell = tableView.cellForRow(at: indexPath) as? Cell else {
                 break
             }
             let object = fetchedResultsController.object(at: indexPath)
             delegate.configure(cell, for: object)
         case .move:
+            guard let indexPath = indexPath else {
+                fatalError("IndexPath can't be nil")
+            }
             guard let newIndexPath = newIndexPath else {
                 fatalError("New index path can't be nil")
             }
             tableView.deleteRows(at: [indexPath], with: .automatic)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
         case .delete:
+            guard let indexPath = indexPath else {
+                fatalError("IndexPath can't be nil")
+            }
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
