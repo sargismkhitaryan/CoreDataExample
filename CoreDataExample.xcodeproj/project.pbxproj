@@ -12,6 +12,8 @@
 		9CBA1F542165F212004FE44C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F532165F212004FE44C /* Person.swift */; };
 		9CBA1F5621660CC4004FE44C /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5521660CC4004FE44C /* NSManagedObjectContext+Extensions.swift */; };
 		9CBA1F582166222A004FE44C /* CoreDataTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F572166222A004FE44C /* CoreDataTableViewDataSource.swift */; };
+		9CBA1F5A216640CB004FE44C /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F59216640CB004FE44C /* PersonTableViewCell.swift */; };
+		9CBA1F5D21664102004FE44C /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5C21664102004FE44C /* PersonViewModel.swift */; };
 		F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50872164027C00B43F52 /* AppDelegate.swift */; };
 		F1AB508A2164027C00B43F52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50892164027C00B43F52 /* ViewController.swift */; };
 		F1AB508D2164027C00B43F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB508B2164027C00B43F52 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		9CBA1F532165F212004FE44C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9CBA1F5521660CC4004FE44C /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
 		9CBA1F572166222A004FE44C /* CoreDataTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewDataSource.swift; sourceTree = "<group>"; };
+		9CBA1F59216640CB004FE44C /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		9CBA1F5C21664102004FE44C /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 		F1AB50842164027C00B43F52 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AB50872164027C00B43F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1AB50892164027C00B43F52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 		9CBA1F3B2164C724004FE44C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F1AB50892164027C00B43F52 /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -67,7 +72,7 @@
 		9CBA1F3C2164C724004FE44C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F1AB50892164027C00B43F52 /* ViewController.swift */,
+				9CBA1F59216640CB004FE44C /* PersonTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -80,6 +85,14 @@
 				9CBA1F572166222A004FE44C /* CoreDataTableViewDataSource.swift */,
 			);
 			path = CoreDataHelpers;
+			sourceTree = "<group>";
+		};
+		9CBA1F5B216640EC004FE44C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA1F5C21664102004FE44C /* PersonViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F1AB507B2164027C00B43F52 = {
@@ -105,6 +118,7 @@
 				9CBA1F3A2164C6DF004FE44C /* Model */,
 				9CBA1F3B2164C724004FE44C /* ViewControllers */,
 				9CBA1F3C2164C724004FE44C /* Views */,
+				9CBA1F5B216640EC004FE44C /* ViewModel */,
 				F1AB50872164027C00B43F52 /* AppDelegate.swift */,
 				F1AB508B2164027C00B43F52 /* Main.storyboard */,
 				F1AB50912164027D00B43F52 /* Assets.xcassets */,
@@ -186,8 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CBA1F542165F212004FE44C /* Person.swift in Sources */,
+				9CBA1F5D21664102004FE44C /* PersonViewModel.swift in Sources */,
 				9CBA1F5621660CC4004FE44C /* NSManagedObjectContext+Extensions.swift in Sources */,
 				F1AB508A2164027C00B43F52 /* ViewController.swift in Sources */,
+				9CBA1F5A216640CB004FE44C /* PersonTableViewCell.swift in Sources */,
 				9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */,
 				F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */,
 				F1AB50902164027C00B43F52 /* PeopleModel.xcdatamodeld in Sources */,

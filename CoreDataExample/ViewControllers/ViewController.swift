@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     
-    var peopleContext: NSManagedObjectContext?
+    var peopleContext: NSManagedObjectContext!
     
     @IBOutlet var tableView: UITableView!
     
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     fileprivate func setupTableView() {
         let request = Person.sortedFetchRequest
         request.fetchBatchSize = 20
-        let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: peopleContext!, sectionNameKeyPath: nil, cacheName: nil)
+        let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: peopleContext, sectionNameKeyPath: nil, cacheName: nil)
         dataSource = CoreDataTableViewDataSource(tableView: tableView, cellId: "PersonCell", resultsController: frc, delegate: self)
     }
 
@@ -48,7 +48,8 @@ extension ViewController: UITableViewDelegate {
 }
 
 extension ViewController: CoreDataTableViewDataSourceDelegate {
-    func configure(_ cell: UITableViewCell, for object: Person) {
-        cell.textLabel?.text = object.name
+    func configure(_ cell: PersonTableViewCell, for object: Person) {
+        let viewModel = PersonViewModel(person: object)
+        cell.personViewModel = viewModel
     }
 }
