@@ -11,6 +11,7 @@
 		9CBA1F482164D98E004FE44C /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F472164D98E004FE44C /* Managed.swift */; };
 		9CBA1F542165F212004FE44C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F532165F212004FE44C /* Person.swift */; };
 		9CBA1F5621660CC4004FE44C /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5521660CC4004FE44C /* NSManagedObjectContext+Extensions.swift */; };
+		9CBA1F582166222A004FE44C /* CoreDataTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F572166222A004FE44C /* CoreDataTableViewDataSource.swift */; };
 		F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50872164027C00B43F52 /* AppDelegate.swift */; };
 		F1AB508A2164027C00B43F52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50892164027C00B43F52 /* ViewController.swift */; };
 		F1AB508D2164027C00B43F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB508B2164027C00B43F52 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		9CBA1F472164D98E004FE44C /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 		9CBA1F532165F212004FE44C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9CBA1F5521660CC4004FE44C /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		9CBA1F572166222A004FE44C /* CoreDataTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewDataSource.swift; sourceTree = "<group>"; };
 		F1AB50842164027C00B43F52 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AB50872164027C00B43F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1AB50892164027C00B43F52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				9CBA1F472164D98E004FE44C /* Managed.swift */,
 				9CBA1F5521660CC4004FE44C /* NSManagedObjectContext+Extensions.swift */,
+				9CBA1F572166222A004FE44C /* CoreDataTableViewDataSource.swift */,
 			);
 			path = CoreDataHelpers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */,
 				F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */,
 				F1AB50902164027C00B43F52 /* PeopleModel.xcdatamodeld in Sources */,
+				9CBA1F582166222A004FE44C /* CoreDataTableViewDataSource.swift in Sources */,
 				9CBA1F482164D98E004FE44C /* Managed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
