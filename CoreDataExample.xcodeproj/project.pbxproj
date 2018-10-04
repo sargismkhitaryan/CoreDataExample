@@ -14,6 +14,7 @@
 		9CBA1F582166222A004FE44C /* CoreDataTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F572166222A004FE44C /* CoreDataTableViewDataSource.swift */; };
 		9CBA1F5A216640CB004FE44C /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F59216640CB004FE44C /* PersonTableViewCell.swift */; };
 		9CBA1F5D21664102004FE44C /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5C21664102004FE44C /* PersonViewModel.swift */; };
+		9CBA1F5F21664B31004FE44C /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5E21664B31004FE44C /* AddPersonViewController.swift */; };
 		F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50872164027C00B43F52 /* AppDelegate.swift */; };
 		F1AB508A2164027C00B43F52 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50892164027C00B43F52 /* PeopleViewController.swift */; };
 		F1AB508D2164027C00B43F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB508B2164027C00B43F52 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		9CBA1F572166222A004FE44C /* CoreDataTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewDataSource.swift; sourceTree = "<group>"; };
 		9CBA1F59216640CB004FE44C /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		9CBA1F5C21664102004FE44C /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		9CBA1F5E21664B31004FE44C /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 		F1AB50842164027C00B43F52 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AB50872164027C00B43F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1AB50892164027C00B43F52 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				F1AB50892164027C00B43F52 /* PeopleViewController.swift */,
+				9CBA1F5E21664B31004FE44C /* AddPersonViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				9CBA1F542165F212004FE44C /* Person.swift in Sources */,
 				9CBA1F5D21664102004FE44C /* PersonViewModel.swift in Sources */,
+				9CBA1F5F21664B31004FE44C /* AddPersonViewController.swift in Sources */,
 				9CBA1F5621660CC4004FE44C /* NSManagedObjectContext+Extensions.swift in Sources */,
 				F1AB508A2164027C00B43F52 /* PeopleViewController.swift in Sources */,
 				9CBA1F5A216640CB004FE44C /* PersonTableViewCell.swift in Sources */,

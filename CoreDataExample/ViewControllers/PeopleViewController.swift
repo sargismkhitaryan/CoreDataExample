@@ -13,6 +13,8 @@ class PeopleViewController: UIViewController {
     
     // MARK: - Properties
     
+    static let addPersonSegue = "AddPersonSegue"
+    
     var peopleContext: NSManagedObjectContext!
     
     @IBOutlet var tableView: UITableView!
@@ -24,6 +26,21 @@ class PeopleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPeople()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == PeopleViewController.addPersonSegue {
+            guard let vc = segue.destination as? AddPersonViewController else {
+                fatalError("Wrong type of View Controller")
+            }
+            vc.delegate = self
+        }
+    }
+    
+    // MARK: - Action Methods
+    
+    @IBAction func addPersonButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: PeopleViewController.addPersonSegue, sender: nil)
     }
     
     // MARK: - Private Methods
@@ -51,5 +68,13 @@ extension PeopleViewController: CoreDataTableViewDataSourceDelegate {
     func configure(_ cell: PersonTableViewCell, for object: Person) {
         let viewModel = PersonViewModel(person: object)
         cell.personViewModel = viewModel
+    }
+}
+
+extension PeopleViewController: AddPersonViewControllerDelegate {
+    func didAdd(name: String, date: Date) {
+        peopleContext.performChanges {
+            _ = Person.insert(into: self.peopleContext, name: name, birthdate: date)
+        }
     }
 }
