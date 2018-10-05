@@ -18,7 +18,11 @@ class PersonDetailsViewController: UIViewController {
         }
     }
     
-    var personViewModel: PersonViewModel!
+    var personViewModel: PersonViewModel! {
+        didSet {
+            updateView()
+        }
+    }
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var birthdayLabel: UILabel!
@@ -33,8 +37,8 @@ class PersonDetailsViewController: UIViewController {
     // MARK: - Private Methods
     
     fileprivate func updateView() {
-        nameLabel.text = "Name: \(personViewModel.name ?? "")"
-        birthdayLabel.text = "Birthday: \(personViewModel.day ?? "")"
+        nameLabel?.text = "Name: \(personViewModel.name ?? "")"
+        birthdayLabel?.text = "Birthday: \(personViewModel.day ?? "")"
     }
 
 }
