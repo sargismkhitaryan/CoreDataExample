@@ -15,6 +15,14 @@ class PersonDetailsViewController: UIViewController {
     var person: Person! {
         didSet {
             personViewModel = PersonViewModel(person: person)
+            observer = ManagedObjectObserver(object: person, handler: { [weak self] type in
+                switch type {
+                case .delete:
+                    _ = self?.navigationController?.popViewController(animated: true)
+                case .update:
+                    break
+                }
+            })
         }
     }
     
@@ -23,6 +31,8 @@ class PersonDetailsViewController: UIViewController {
             updateView()
         }
     }
+    
+    fileprivate var observer: ManagedObjectObserver?
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var birthdayLabel: UILabel!
@@ -34,6 +44,14 @@ class PersonDetailsViewController: UIViewController {
         updateView()
     }
     
+    // MARK: - Action Methods
+    
+    @IBAction func deleteButtonPressed(_ sender: Any) {
+        let context = person.managedObjectContext
+        context?.performChanges {
+            context?.delete(self.person)
+        }
+    }
     // MARK: - Private Methods
     
     fileprivate func updateView() {

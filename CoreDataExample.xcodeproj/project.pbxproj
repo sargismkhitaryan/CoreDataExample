@@ -22,6 +22,8 @@
 		F1AB50902164027C00B43F52 /* PeopleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1AB508E2164027C00B43F52 /* PeopleModel.xcdatamodeld */; };
 		F1AB50922164027D00B43F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1AB50912164027D00B43F52 /* Assets.xcassets */; };
 		F1AB50952164027D00B43F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB50932164027D00B43F52 /* LaunchScreen.storyboard */; };
+		F1AB509D2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB509C2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift */; };
+		F1AB509F2167EC5300B43F52 /* ManagedObjectObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB509E2167EC5300B43F52 /* ManagedObjectObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		F1AB50912164027D00B43F52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1AB50942164027D00B43F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1AB50962164027D00B43F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1AB509C2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Observers.swift"; sourceTree = "<group>"; };
+		F1AB509E2167EC5300B43F52 /* ManagedObjectObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				9CBA1F472164D98E004FE44C /* Managed.swift */,
 				9CBA1F5521660CC4004FE44C /* NSManagedObjectContext+Extensions.swift */,
 				9CBA1F572166222A004FE44C /* CoreDataTableViewDataSource.swift */,
+				F1AB509C2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift */,
+				F1AB509E2167EC5300B43F52 /* ManagedObjectObserver.swift */,
 			);
 			path = CoreDataHelpers;
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 			files = (
 				9CBA1F542165F212004FE44C /* Person.swift in Sources */,
 				9CBA1F5D21664102004FE44C /* PersonViewModel.swift in Sources */,
+				F1AB509F2167EC5300B43F52 /* ManagedObjectObserver.swift in Sources */,
+				F1AB509D2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift in Sources */,
 				9CBA1F5F21664B31004FE44C /* AddPersonViewController.swift in Sources */,
 				9CBA1F5621660CC4004FE44C /* NSManagedObjectContext+Extensions.swift in Sources */,
 				F1AB508A2164027C00B43F52 /* PeopleViewController.swift in Sources */,

@@ -153,7 +153,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pr2-PC-Oh6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detial Information" id="Iyt-oz-LvE"/>
+                    <navigationItem key="navigationItem" title="Detial Information" id="Iyt-oz-LvE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="P8I-3h-elF">
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="sj4-Yc-MlW" id="R7t-nk-ZmX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="birthdayLabel" destination="akj-St-zcm" id="pCk-fU-UbG"/>
                         <outlet property="nameLabel" destination="XfB-dl-3Wc" id="ep4-xR-5mW"/>
