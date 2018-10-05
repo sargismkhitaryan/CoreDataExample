@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" textLabel="4KW-OZ-xoy" detailTextLabel="j7G-qH-w5x" style="IBUITableViewCellStyleSubtitle" id="NFA-Dm-E5F" customClass="PersonTableViewCell" customModule="CoreDataExample" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PersonCell" textLabel="4KW-OZ-xoy" detailTextLabel="j7G-qH-w5x" style="IBUITableViewCellStyleSubtitle" id="NFA-Dm-E5F" customClass="PersonTableViewCell" customModule="CoreDataExample" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NFA-Dm-E5F" id="5UK-T0-kA0">
@@ -71,6 +71,7 @@
                     <connections>
                         <outlet property="tableView" destination="GyI-nx-g4J" id="aN7-5U-DaR"/>
                         <segue destination="MuC-Gv-gdN" kind="show" identifier="AddPersonSegue" id="Twp-6R-ku7"/>
+                        <segue destination="sj4-Yc-MlW" kind="show" identifier="PersonDetailsSegue" id="TRR-Aj-0fH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,6 +119,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEc-EK-hj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888.8" y="133.5832083958021"/>
+        </scene>
+        <!--Detial Information-->
+        <scene sceneID="bAu-u9-ik4">
+            <objects>
+                <viewController id="sj4-Yc-MlW" customClass="PersonDetailsViewController" customModule="CoreDataExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kYk-jN-E3n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WR5-EM-lZx">
+                                <rect key="frame" x="153" y="308" width="69" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfB-dl-3Wc">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akj-St-zcm">
+                                        <rect key="frame" x="0.0" y="30.5" width="69" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WR5-EM-lZx" firstAttribute="centerY" secondItem="kYk-jN-E3n" secondAttribute="centerY" id="F7R-Ko-HTn"/>
+                            <constraint firstItem="WR5-EM-lZx" firstAttribute="centerX" secondItem="kYk-jN-E3n" secondAttribute="centerX" id="WK3-SU-x20"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pr2-PC-Oh6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detial Information" id="Iyt-oz-LvE"/>
+                    <connections>
+                        <outlet property="birthdayLabel" destination="akj-St-zcm" id="pCk-fU-UbG"/>
+                        <outlet property="nameLabel" destination="XfB-dl-3Wc" id="ep4-xR-5mW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zh0-mb-7ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="893"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ayX-Ca-Ifb">

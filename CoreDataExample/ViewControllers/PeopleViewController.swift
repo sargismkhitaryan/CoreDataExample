@@ -14,6 +14,7 @@ class PeopleViewController: UIViewController {
     // MARK: - Properties
     
     static let addPersonSegue = "AddPersonSegue"
+    static let personDetailsSegue = "PersonDetailsSegue"
     
     var peopleContext: NSManagedObjectContext!
     
@@ -34,6 +35,14 @@ class PeopleViewController: UIViewController {
                 fatalError("Wrong type of View Controller")
             }
             vc.delegate = self
+        } else if segue.identifier == PeopleViewController.personDetailsSegue {
+            guard let person = sender as? Person else {
+                fatalError("Wrong sender type")
+            }
+            guard let vc = segue.destination as? PersonDetailsViewController else {
+                fatalError("Wrong type of View Controller")
+            }
+            vc.person = person
         }
     }
     
@@ -70,6 +79,11 @@ extension PeopleViewController: UITableViewDelegate {
             }
         })]
         return actions
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let person = dataSource.object(at: indexPath)
+        performSegue(withIdentifier: PeopleViewController.personDetailsSegue, sender: person)
     }
 }
 
