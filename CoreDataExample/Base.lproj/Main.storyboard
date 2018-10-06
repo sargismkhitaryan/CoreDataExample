@@ -95,12 +95,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3b1-Nt-Vfb">
+                                <rect key="frame" x="0.0" y="142" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="hDA-xO-awL"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="560542685.75796795">
+                                    <!--2018-10-06 18:18:05 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gRl-Xa-dpU" firstAttribute="trailing" secondItem="gBD-Fn-HbE" secondAttribute="trailing" constant="75" id="4Gc-z2-EEh"/>
                             <constraint firstItem="gBD-Fn-HbE" firstAttribute="top" secondItem="gRl-Xa-dpU" secondAttribute="top" constant="25" id="8lL-no-5xb"/>
                             <constraint firstItem="gBD-Fn-HbE" firstAttribute="leading" secondItem="gRl-Xa-dpU" secondAttribute="leading" constant="75" id="Lat-07-474"/>
+                            <constraint firstItem="3b1-Nt-Vfb" firstAttribute="trailing" secondItem="gRl-Xa-dpU" secondAttribute="trailing" id="YDQ-V4-KEf"/>
+                            <constraint firstItem="3b1-Nt-Vfb" firstAttribute="top" secondItem="gBD-Fn-HbE" secondAttribute="bottom" constant="8" id="ejr-xn-sdh"/>
+                            <constraint firstItem="3b1-Nt-Vfb" firstAttribute="leading" secondItem="gRl-Xa-dpU" secondAttribute="leading" id="kn1-Dm-Eb1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gRl-Xa-dpU"/>
                     </view>
@@ -113,6 +125,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="birthdayDatePicker" destination="3b1-Nt-Vfb" id="rB8-E3-XD5"/>
                         <outlet property="nameTextField" destination="gBD-Fn-HbE" id="HXC-t7-RzC"/>
                     </connections>
                 </viewController>

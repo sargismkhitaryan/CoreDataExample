@@ -17,6 +17,7 @@ class AddPersonViewController: UIViewController {
     // MARK: - Properties
     
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var birthdayDatePicker: UIDatePicker!
     
     weak var delegate: AddPersonViewControllerDelegate!
     
@@ -25,6 +26,7 @@ class AddPersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextField.becomeFirstResponder()
+        setupDayPicker()
     }
 
     // MARK:  - Action Methods
@@ -35,5 +37,17 @@ class AddPersonViewController: UIViewController {
             return
         }
         delegate.didAdd(name: name, date: Date())
+    }
+    
+    // MARK: - Private Methods
+    
+    fileprivate func setupDayPicker() {
+        birthdayDatePicker.maximumDate = Date()
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        let day = Date()
+        var components = DateComponents()
+        components.year = -100
+        let minDate = calendar.date(byAdding: components, to: day)
+        birthdayDatePicker.minimumDate = minDate
     }
 }
