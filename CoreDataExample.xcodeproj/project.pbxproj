@@ -24,6 +24,8 @@
 		F1AB50952164027D00B43F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB50932164027D00B43F52 /* LaunchScreen.storyboard */; };
 		F1AB509D2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB509C2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift */; };
 		F1AB509F2167EC5300B43F52 /* ManagedObjectObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB509E2167EC5300B43F52 /* ManagedObjectObserver.swift */; };
+		F1AB50A52169EDC300B43F52 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50A42169EDC300B43F52 /* Region.swift */; };
+		F1AB50A72169F16700B43F52 /* ISO3166.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50A62169F16700B43F52 /* ISO3166.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		F1AB50962164027D00B43F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1AB509C2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Observers.swift"; sourceTree = "<group>"; };
 		F1AB509E2167EC5300B43F52 /* ManagedObjectObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectObserver.swift; sourceTree = "<group>"; };
+		F1AB50A42169EDC300B43F52 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		F1AB50A62169F16700B43F52 /* ISO3166.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO3166.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,9 @@
 			children = (
 				F1AB508E2164027C00B43F52 /* PeopleModel.xcdatamodeld */,
 				9CBA1F3D2164C751004FE44C /* PersonStack.swift */,
+				F1AB50A42169EDC300B43F52 /* Region.swift */,
 				9CBA1F532165F212004FE44C /* Person.swift */,
+				F1AB50A62169F16700B43F52 /* ISO3166.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 				9CBA1F542165F212004FE44C /* Person.swift in Sources */,
 				9CBA1F5D21664102004FE44C /* PersonViewModel.swift in Sources */,
 				F1AB509F2167EC5300B43F52 /* ManagedObjectObserver.swift in Sources */,
+				F1AB50A72169F16700B43F52 /* ISO3166.swift in Sources */,
+				F1AB50A52169EDC300B43F52 /* Region.swift in Sources */,
 				F1AB509D2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift in Sources */,
 				9CBA1F5F21664B31004FE44C /* AddPersonViewController.swift in Sources */,
 				9CBA1F5621660CC4004FE44C /* NSManagedObjectContext+Extensions.swift in Sources */,
