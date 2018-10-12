@@ -9,7 +9,7 @@
 import UIKit
 
 class PersonTableViewCell: UITableViewCell {
-    
+
     var personViewModel: PersonViewModel! {
         didSet {
             textLabel?.text = personViewModel.name

@@ -40,20 +40,20 @@ private let countriesAndContinents: [(ISO3166.Continent, ISO3166.Country)] = [
     (.oceania, .asm),
     (.europe, .and),
     (.africa, .ago),
-    (.europe, .arm),
+    (.europe, .arm)
 ]
 
 extension ISO3166.Continent {
     init?(country: ISO3166.Country) {
-        let cc = countriesAndContinents.first { $0.1 == country }
-        guard let (continent, _) = cc else { return nil }
+        let first = countriesAndContinents.first { $0.1 == country }
+        guard let (continent, _) = first else { return nil }
         self = continent
     }
 }
 
 extension ISO3166.Country {
-    static func fromISO3166(_ s: String) -> ISO3166.Country {
-        switch (s.lowercased()) {
+    static func fromISO3166(_ name: String) -> ISO3166.Country {
+        switch name.lowercased() {
         case "ala": return .ala
         case "afg": return .afg
         case "alb": return .alb

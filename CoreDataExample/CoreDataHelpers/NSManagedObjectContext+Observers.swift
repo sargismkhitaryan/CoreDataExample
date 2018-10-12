@@ -61,7 +61,7 @@ struct ObjectsDidChangeNotification {
 }
 
 extension NSManagedObjectContext {
-    func objectDidChangeNotificationObserver(_ completion: @escaping (ObjectsDidChangeNotification) -> ()) -> NSObjectProtocol {
+    func objectDidChangeNotificationObserver(_ completion: @escaping (ObjectsDidChangeNotification) -> Void) -> NSObjectProtocol {
         return NotificationCenter.default.addObserver(forName: NSNotification.Name.NSManagedObjectContextObjectsDidChange,
                                                       object: self,
                                                       queue: nil,

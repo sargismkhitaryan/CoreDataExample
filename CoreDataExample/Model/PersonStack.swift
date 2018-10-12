@@ -8,7 +8,7 @@
 
 import CoreData
 
-func createPeopleContainer(completion: @escaping (NSPersistentContainer) -> ()) {
+func createPeopleContainer(completion: @escaping (NSPersistentContainer) -> Void) {
     let container = NSPersistentContainer(name: "PeopleModel")
     container.loadPersistentStores { (_, error) in
         guard error == nil else {
