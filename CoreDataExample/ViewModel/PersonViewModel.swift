@@ -18,11 +18,11 @@ final class PersonViewModel {
     }
 
     // MARK: - Stored Variables
-    
+
     var person: Person
-    
+
     // MARK: - Initialization
-    
+
     init(person: Person) {
         self.person = person
     }

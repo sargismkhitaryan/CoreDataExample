@@ -10,62 +10,68 @@ import UIKit
 import CoreData
 
 class PeopleViewController: UIViewController {
-    
+
     // MARK: - Properties
-    
+
     static let addPersonSegue = "AddPersonSegue"
     static let personDetailsSegue = "PersonDetailsSegue"
-    
+
     var peopleContext: NSManagedObjectContext!
-    
+
     @IBOutlet var tableView: UITableView!
-    
+
     fileprivate var dataSource: CoreDataTableViewDataSource<PeopleViewController>!
-    
+
     // MARK: - Overriden Methods
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPeople()
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == PeopleViewController.addPersonSegue {
-            guard let vc = segue.destination as? AddPersonViewController else {
+            guard let destinationVC = segue.destination as? AddPersonViewController else {
                 fatalError("Wrong type of View Controller")
             }
-            vc.delegate = self
+            destinationVC.delegate = self
         } else if segue.identifier == PeopleViewController.personDetailsSegue {
             guard let person = sender as? Person else {
                 fatalError("Wrong sender type")
             }
-            guard let vc = segue.destination as? PersonDetailsViewController else {
+            guard let destinationVC = segue.destination as? PersonDetailsViewController else {
                 fatalError("Wrong type of View Controller")
             }
-            vc.person = person
+            destinationVC.person = person
         }
     }
-    
+
     // MARK: - Action Methods
-    
+
     @IBAction func addPersonButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: PeopleViewController.addPersonSegue, sender: nil)
     }
-    
+
     // MARK: - Private Methods
-    
+
     fileprivate func setupPeople() {
         createPeopleContainer { [weak self] container in
             self?.peopleContext = container.viewContext
             self?.setupTableView()
         }
     }
-    
+
     fileprivate func setupTableView() {
         let request = Person.sortedFetchRequest
         request.fetchBatchSize = 20
-        let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: peopleContext, sectionNameKeyPath: nil, cacheName: nil)
-        dataSource = CoreDataTableViewDataSource(tableView: tableView, cellId: "PersonCell", resultsController: frc, delegate: self)
+        let frc = NSFetchedResultsController(fetchRequest: request,
+                                             managedObjectContext: peopleContext,
+                                             sectionNameKeyPath: nil,
+                                             cacheName: nil)
+        dataSource = CoreDataTableViewDataSource(tableView: tableView,
+                                                 cellId: "PersonCell",
+                                                 resultsController: frc,
+                                                 delegate: self)
     }
 
 }
@@ -80,7 +86,7 @@ extension PeopleViewController: UITableViewDelegate {
         })]
         return actions
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let person = dataSource.object(at: indexPath)
         performSegue(withIdentifier: PeopleViewController.personDetailsSegue, sender: person)

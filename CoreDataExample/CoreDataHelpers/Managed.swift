@@ -17,7 +17,7 @@ extension Managed {
     static var defaultSortDescriptors: [NSSortDescriptor] {
         return []
     }
-    
+
     static var sortedFetchRequest: NSFetchRequest<Self> {
         let request = NSFetchRequest<Self>(entityName: entityName)
         request.sortDescriptors = defaultSortDescriptors

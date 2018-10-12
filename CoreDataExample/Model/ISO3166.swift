@@ -20,7 +20,7 @@ struct ISO3166 {
         case arm = 051
         case unknown = 0
     }
-    
+
     enum Continent: String {
         case northAmerica = "NorthAmerica"
         case europe = "Europe"

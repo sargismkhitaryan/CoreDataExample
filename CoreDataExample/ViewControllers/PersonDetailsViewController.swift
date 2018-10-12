@@ -11,7 +11,7 @@ import UIKit
 class PersonDetailsViewController: UIViewController {
 
     // MARK: - Properties
-    
+
     var person: Person! {
         didSet {
             personViewModel = PersonViewModel(person: person)
@@ -25,27 +25,27 @@ class PersonDetailsViewController: UIViewController {
             })
         }
     }
-    
+
     var personViewModel: PersonViewModel! {
         didSet {
             updateView()
         }
     }
-    
+
     fileprivate var observer: ManagedObjectObserver?
-    
+
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var birthdayLabel: UILabel!
-    
+
     // MARK: - Overriden Methods
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         updateView()
     }
-    
+
     // MARK: - Action Methods
-    
+
     @IBAction func deleteButtonPressed(_ sender: Any) {
         let context = person.managedObjectContext
         context?.performChanges {
@@ -53,7 +53,7 @@ class PersonDetailsViewController: UIViewController {
         }
     }
     // MARK: - Private Methods
-    
+
     fileprivate func updateView() {
         nameLabel?.text = "Name: \(personViewModel.name ?? "")"
         birthdayLabel?.text = "Birthday: \(personViewModel.day ?? "")"

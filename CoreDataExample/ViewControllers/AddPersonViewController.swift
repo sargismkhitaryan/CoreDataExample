@@ -15,22 +15,22 @@ protocol AddPersonViewControllerDelegate: class {
 class AddPersonViewController: UIViewController {
 
     // MARK: - Properties
-    
+
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var birthdayDatePicker: UIDatePicker!
-    
+
     weak var delegate: AddPersonViewControllerDelegate!
-    
+
     // MARK: - Overriden Methods
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextField.becomeFirstResponder()
         setupDayPicker()
     }
 
-    // MARK:  - Action Methods
-    
+    // MARK: - Action Methods
+
     @IBAction func doneButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
         guard let name = nameTextField.text, !name.isEmpty else {
@@ -38,9 +38,9 @@ class AddPersonViewController: UIViewController {
         }
         delegate.didAdd(name: name, date: Date())
     }
-    
+
     // MARK: - Private Methods
-    
+
     fileprivate func setupDayPicker() {
         birthdayDatePicker.maximumDate = Date()
         let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
