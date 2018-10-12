@@ -16,6 +16,15 @@
 		9CBA1F5D21664102004FE44C /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5C21664102004FE44C /* PersonViewModel.swift */; };
 		9CBA1F5F21664B31004FE44C /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5E21664B31004FE44C /* AddPersonViewController.swift */; };
 		9CBA1F6D21675D30004FE44C /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F6C21675D30004FE44C /* PersonDetailsViewController.swift */; };
+		9CBA1FBF2170D1F5004FE44C /* Continent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FB92170D1F5004FE44C /* Continent+CoreDataClass.swift */; };
+		9CBA1FC02170D1F5004FE44C /* Continent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FBA2170D1F5004FE44C /* Continent+CoreDataProperties.swift */; };
+		9CBA1FC12170D1F5004FE44C /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FBB2170D1F5004FE44C /* Country+CoreDataClass.swift */; };
+		9CBA1FC22170D1F5004FE44C /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FBC2170D1F5004FE44C /* Country+CoreDataProperties.swift */; };
+		9CBA1FC32170D1F5004FE44C /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FBD2170D1F5004FE44C /* Person+CoreDataClass.swift */; };
+		9CBA1FC42170D1F5004FE44C /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FBE2170D1F5004FE44C /* Person+CoreDataProperties.swift */; };
+		9CBA1FC62170D3E2004FE44C /* Person+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FC52170D3E2004FE44C /* Person+Extensions.swift */; };
+		9CBA1FC82170D405004FE44C /* Country+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FC72170D405004FE44C /* Country+Extensions.swift */; };
+		9CBA1FCA2170D415004FE44C /* Continent+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FC92170D415004FE44C /* Continent+Extensions.swift */; };
 		F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50872164027C00B43F52 /* AppDelegate.swift */; };
 		F1AB508A2164027C00B43F52 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50892164027C00B43F52 /* PeopleViewController.swift */; };
 		F1AB508D2164027C00B43F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB508B2164027C00B43F52 /* Main.storyboard */; };
@@ -24,7 +33,6 @@
 		F1AB50952164027D00B43F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AB50932164027D00B43F52 /* LaunchScreen.storyboard */; };
 		F1AB509D2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB509C2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift */; };
 		F1AB509F2167EC5300B43F52 /* ManagedObjectObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB509E2167EC5300B43F52 /* ManagedObjectObserver.swift */; };
-		F1AB50A52169EDC300B43F52 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50A42169EDC300B43F52 /* Region.swift */; };
 		F1AB50A72169F16700B43F52 /* ISO3166.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50A62169F16700B43F52 /* ISO3166.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +46,15 @@
 		9CBA1F5C21664102004FE44C /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 		9CBA1F5E21664B31004FE44C /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 		9CBA1F6C21675D30004FE44C /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		9CBA1FB92170D1F5004FE44C /* Continent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Continent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9CBA1FBA2170D1F5004FE44C /* Continent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Continent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9CBA1FBB2170D1F5004FE44C /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9CBA1FBC2170D1F5004FE44C /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9CBA1FBD2170D1F5004FE44C /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9CBA1FBE2170D1F5004FE44C /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9CBA1FC52170D3E2004FE44C /* Person+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extensions.swift"; sourceTree = "<group>"; };
+		9CBA1FC72170D405004FE44C /* Country+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+Extensions.swift"; sourceTree = "<group>"; };
+		9CBA1FC92170D415004FE44C /* Continent+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Continent+Extensions.swift"; sourceTree = "<group>"; };
 		F1AB50842164027C00B43F52 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AB50872164027C00B43F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1AB50892164027C00B43F52 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +65,6 @@
 		F1AB50962164027D00B43F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1AB509C2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Observers.swift"; sourceTree = "<group>"; };
 		F1AB509E2167EC5300B43F52 /* ManagedObjectObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectObserver.swift; sourceTree = "<group>"; };
-		F1AB50A42169EDC300B43F52 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		F1AB50A62169F16700B43F52 /* ISO3166.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO3166.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,9 +82,9 @@
 		9CBA1F3A2164C6DF004FE44C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9CBA1FAC2170D1B6004FE44C /* CoreDataModel */,
 				F1AB508E2164027C00B43F52 /* PeopleModel.xcdatamodeld */,
 				9CBA1F3D2164C751004FE44C /* PersonStack.swift */,
-				F1AB50A42169EDC300B43F52 /* Region.swift */,
 				9CBA1F532165F212004FE44C /* Person.swift */,
 				F1AB50A62169F16700B43F52 /* ISO3166.swift */,
 			);
@@ -111,6 +127,22 @@
 				9CBA1F5C21664102004FE44C /* PersonViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9CBA1FAC2170D1B6004FE44C /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA1FB92170D1F5004FE44C /* Continent+CoreDataClass.swift */,
+				9CBA1FBA2170D1F5004FE44C /* Continent+CoreDataProperties.swift */,
+				9CBA1FC92170D415004FE44C /* Continent+Extensions.swift */,
+				9CBA1FBB2170D1F5004FE44C /* Country+CoreDataClass.swift */,
+				9CBA1FBC2170D1F5004FE44C /* Country+CoreDataProperties.swift */,
+				9CBA1FC72170D405004FE44C /* Country+Extensions.swift */,
+				9CBA1FBD2170D1F5004FE44C /* Person+CoreDataClass.swift */,
+				9CBA1FBE2170D1F5004FE44C /* Person+CoreDataProperties.swift */,
+				9CBA1FC52170D3E2004FE44C /* Person+Extensions.swift */,
+			);
+			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
 		F1AB507B2164027C00B43F52 = {
@@ -239,20 +271,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CBA1F542165F212004FE44C /* Person.swift in Sources */,
+				9CBA1FC82170D405004FE44C /* Country+Extensions.swift in Sources */,
 				9CBA1F5D21664102004FE44C /* PersonViewModel.swift in Sources */,
 				F1AB509F2167EC5300B43F52 /* ManagedObjectObserver.swift in Sources */,
 				F1AB50A72169F16700B43F52 /* ISO3166.swift in Sources */,
-				F1AB50A52169EDC300B43F52 /* Region.swift in Sources */,
 				F1AB509D2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift in Sources */,
 				9CBA1F5F21664B31004FE44C /* AddPersonViewController.swift in Sources */,
+				9CBA1FC02170D1F5004FE44C /* Continent+CoreDataProperties.swift in Sources */,
 				9CBA1F5621660CC4004FE44C /* NSManagedObjectContext+Extensions.swift in Sources */,
+				9CBA1FC12170D1F5004FE44C /* Country+CoreDataClass.swift in Sources */,
+				9CBA1FCA2170D415004FE44C /* Continent+Extensions.swift in Sources */,
 				F1AB508A2164027C00B43F52 /* PeopleViewController.swift in Sources */,
 				9CBA1F5A216640CB004FE44C /* PersonTableViewCell.swift in Sources */,
 				9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */,
+				9CBA1FC62170D3E2004FE44C /* Person+Extensions.swift in Sources */,
+				9CBA1FC32170D1F5004FE44C /* Person+CoreDataClass.swift in Sources */,
 				F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */,
+				9CBA1FC42170D1F5004FE44C /* Person+CoreDataProperties.swift in Sources */,
 				9CBA1F6D21675D30004FE44C /* PersonDetailsViewController.swift in Sources */,
 				F1AB50902164027C00B43F52 /* PeopleModel.xcdatamodeld in Sources */,
 				9CBA1F582166222A004FE44C /* CoreDataTableViewDataSource.swift in Sources */,
+				9CBA1FC22170D1F5004FE44C /* Country+CoreDataProperties.swift in Sources */,
+				9CBA1FBF2170D1F5004FE44C /* Continent+CoreDataClass.swift in Sources */,
 				9CBA1F482164D98E004FE44C /* Managed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
