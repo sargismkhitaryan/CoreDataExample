@@ -103,11 +103,8 @@
 		9CBA1F3B2164C724004FE44C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F1AB50892164027C00B43F52 /* PeopleViewController.swift */,
-				9CBA1FDF2175E39C004FE44C /* RegionViewController.swift */,
-				9CBA1FE32175F681004FE44C /* AddRegionViewController.swift */,
-				9CBA1F5E21664B31004FE44C /* AddPersonViewController.swift */,
-				9CBA1F6C21675D30004FE44C /* PersonDetailsViewController.swift */,
+				9CBA1FEE2176092D004FE44C /* PeopleViewControllers */,
+				9CBA1FED2176092D004FE44C /* RegionViewControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -159,6 +156,34 @@
 			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
+		9CBA1FEC217608AE004FE44C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F1AB508B2164027C00B43F52 /* People.storyboard */,
+				9CBA1FE9217607AD004FE44C /* Region.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9CBA1FED2176092D004FE44C /* RegionViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA1FE32175F681004FE44C /* AddRegionViewController.swift */,
+				9CBA1F5E21664B31004FE44C /* AddPersonViewController.swift */,
+			);
+			path = RegionViewControllers;
+			sourceTree = "<group>";
+		};
+		9CBA1FEE2176092D004FE44C /* PeopleViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1AB50892164027C00B43F52 /* PeopleViewController.swift */,
+				9CBA1FDF2175E39C004FE44C /* RegionViewController.swift */,
+				9CBA1F6C21675D30004FE44C /* PersonDetailsViewController.swift */,
+			);
+			path = PeopleViewControllers;
+			sourceTree = "<group>";
+		};
 		F1AB507B2164027C00B43F52 = {
 			isa = PBXGroup;
 			children = (
@@ -183,9 +208,8 @@
 				9CBA1F3C2164C724004FE44C /* Views */,
 				9CBA1F5B216640EC004FE44C /* ViewModel */,
 				9CBA1F3B2164C724004FE44C /* ViewControllers */,
+				9CBA1FEC217608AE004FE44C /* Storyboards */,
 				F1AB50872164027C00B43F52 /* AppDelegate.swift */,
-				F1AB508B2164027C00B43F52 /* People.storyboard */,
-				9CBA1FE9217607AD004FE44C /* Region.storyboard */,
 				F1AB50912164027D00B43F52 /* Assets.xcassets */,
 				F1AB50932164027D00B43F52 /* LaunchScreen.storyboard */,
 				F1AB50962164027D00B43F52 /* Info.plist */,
