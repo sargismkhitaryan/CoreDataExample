@@ -9,10 +9,10 @@
 import CoreData
 import Foundation
 
-extension Continent: Managed {
-
-    static var defaultSortDescriptor: [NSSortDescriptor] {
-        return [NSSortDescriptor(key: #keyPath(name), ascending: true)]
-    }
-
-}
+//extension Continent: Managed {
+//
+//    static var defaultSortDescriptor: [NSSortDescriptor] {
+//        return [NSSortDescriptor(key: "name", ascending: true)]
+//    }
+//
+//}

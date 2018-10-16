@@ -1,5 +1,5 @@
 //
-//  Continent+CoreDataClass.swift
+//  Region+CoreDataClass.swift
 //  CoreDataExample
 //
 //  Created by Sargis Mkhitaryan on 10/16/18.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(Continent)
-public class Continent: Region {
+@objc(Region)
+public class Region: NSManagedObject {
 
 }

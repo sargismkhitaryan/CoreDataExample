@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Region-->
+        <scene sceneID="7fd-i4-qZi">
+            <objects>
+                <viewController id="vvI-qr-5MA" customClass="RegionViewController" customModule="CoreDataExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EYW-Bh-ajm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MKN-d4-CEQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegionCell" rowHeight="65" id="wAR-3e-gny">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wAR-3e-gny" id="3jt-Fz-UfA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MKN-d4-CEQ" firstAttribute="leading" secondItem="FvJ-Qp-c56" secondAttribute="leading" id="OPT-Tc-rLe"/>
+                            <constraint firstItem="MKN-d4-CEQ" firstAttribute="top" secondItem="FvJ-Qp-c56" secondAttribute="top" id="Q9u-hH-IV5"/>
+                            <constraint firstItem="FvJ-Qp-c56" firstAttribute="trailing" secondItem="MKN-d4-CEQ" secondAttribute="trailing" id="Y1h-7u-odN"/>
+                            <constraint firstItem="FvJ-Qp-c56" firstAttribute="bottom" secondItem="MKN-d4-CEQ" secondAttribute="bottom" id="oUf-dc-LGE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FvJ-Qp-c56"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Region" id="CNg-1F-bW2">
+                        <barButtonItem key="backBarButtonItem" title=" " id="XxK-8E-VZh"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RDh-Jn-ef6">
+                            <connections>
+                                <segue destination="JWz-HL-8Ds" kind="show" identifier="AddRegionSegue" id="oFe-TD-PAZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="MKN-d4-CEQ" id="tRN-Yw-dKv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4d-bs-WxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816.8" y="1838.2308845577213"/>
+        </scene>
+        <!--Add Region-->
+        <scene sceneID="D5e-r6-LJq">
+            <objects>
+                <viewController id="JWz-HL-8Ds" customClass="AddRegionViewController" customModule="CoreDataExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gG2-n9-cpG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bW7-kH-qDy">
+                                <rect key="frame" x="139" y="97" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="59g-DI-Eiy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Region" id="CIj-LZ-wkY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="S7b-d9-Qzk">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="JWz-HL-8Ds" id="r98-ji-fXU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="regionTextField" destination="bW7-kH-qDy" id="pLE-cJ-by7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pAg-xy-Mwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2777" y="1838"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wqY-J6-5py">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qpJ-aB-VPO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wXs-ja-lbP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vvI-qr-5MA" kind="relationship" relationship="rootViewController" id="KAx-va-ar0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8S0-rW-eFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="1838.2308845577213"/>
+        </scene>
+    </scenes>
+</document>
