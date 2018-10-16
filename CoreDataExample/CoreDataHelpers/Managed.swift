@@ -26,5 +26,51 @@ extension Managed {
 }
 
 extension Managed where Self: NSManagedObject {
-    static var entityName: String { return entity().name! }
+    static var entityName: String {
+        return entity().name!
+    }
+
+    static func fetch(in context: NSManagedObjectContext,
+                      configurationBlock: ((NSFetchRequest<Self>) -> Void)? = nil) -> Self? {
+        let request = NSFetchRequest<Self>()
+        configurationBlock?(request)
+        do {
+            let result = try context.fetch(request).first
+            return result
+        } catch {
+            fatalError("The Fetch request is throw error!")
+        }
+    }
+
+    static func materializedObject(in context: NSManagedObjectContext, matching predicate: NSPredicate) -> Self? {
+        for object in context.registeredObjects where !object.isFault {
+            if let result = object as? Self, predicate.evaluate(with: object) {
+                return result
+            }
+        }
+        return nil
+    }
+
+    static func findOrFetch(in context: NSManagedObjectContext, matching predicate: NSPredicate) -> Self? {
+        if let object = materializedObject(in: context, matching: predicate) {
+            return object
+        }
+        let result = fetch(in: context) {
+            $0.predicate = predicate
+            $0.returnsObjectsAsFaults = false
+            $0.fetchLimit = 1
+        }
+        return result
+    }
+
+    static func findOrCreate(in context: NSManagedObjectContext,
+                             matching predicate: NSPredicate,
+                             configureBlock: (Self) -> Void) -> Self {
+        if let result = findOrFetch(in: context, matching: predicate) {
+            return result
+        }
+        let object: Self = context.insertObject()
+        configureBlock(object)
+        return object
+    }
 }
