@@ -37,6 +37,6 @@ final class PersonViewModel {
         guard let date = person.birthday else {
             return nil
         }
-        return PersonViewModel.dayFormatter.string(from: date)
+        return PersonViewModel.dayFormatter.string(from: date as Date)
     }
 }
