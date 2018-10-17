@@ -17,7 +17,7 @@ extension Person: Managed {
 
     static func insert(into context: NSManagedObjectContext, name: String, birthdate date: Date) -> Person {
         let person: Person = context.insertObject()
-        person.birthday = date as NSDate
+        person.birthday = date
         person.name = name
         return person
     }

@@ -15,20 +15,12 @@
 		9CBA1F5D21664102004FE44C /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5C21664102004FE44C /* PersonViewModel.swift */; };
 		9CBA1F5F21664B31004FE44C /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5E21664B31004FE44C /* AddPersonViewController.swift */; };
 		9CBA1F6D21675D30004FE44C /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F6C21675D30004FE44C /* PersonDetailsViewController.swift */; };
-		9CBA1FC12170D1F5004FE44C /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FBB2170D1F5004FE44C /* Country+CoreDataClass.swift */; };
-		9CBA1FC22170D1F5004FE44C /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FBC2170D1F5004FE44C /* Country+CoreDataProperties.swift */; };
-		9CBA1FC32170D1F5004FE44C /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FBD2170D1F5004FE44C /* Person+CoreDataClass.swift */; };
-		9CBA1FC42170D1F5004FE44C /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FBE2170D1F5004FE44C /* Person+CoreDataProperties.swift */; };
 		9CBA1FC62170D3E2004FE44C /* Person+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FC52170D3E2004FE44C /* Person+Extensions.swift */; };
 		9CBA1FC82170D405004FE44C /* Country+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FC72170D405004FE44C /* Country+Extensions.swift */; };
 		9CBA1FCA2170D415004FE44C /* Continent+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FC92170D415004FE44C /* Continent+Extensions.swift */; };
-		9CBA1FDD2175B89A004FE44C /* Region+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FDB2175B89A004FE44C /* Region+CoreDataClass.swift */; };
-		9CBA1FDE2175B89A004FE44C /* Region+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FDC2175B89A004FE44C /* Region+CoreDataProperties.swift */; };
 		9CBA1FE02175E39C004FE44C /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FDF2175E39C004FE44C /* RegionViewController.swift */; };
 		9CBA1FE22175E660004FE44C /* Region+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FE12175E65F004FE44C /* Region+Extension.swift */; };
 		9CBA1FE42175F681004FE44C /* AddRegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FE32175F681004FE44C /* AddRegionViewController.swift */; };
-		9CBA1FE72175F943004FE44C /* Continent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FE52175F943004FE44C /* Continent+CoreDataClass.swift */; };
-		9CBA1FE82175F943004FE44C /* Continent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1FE62175F943004FE44C /* Continent+CoreDataProperties.swift */; };
 		9CBA1FEB217607AD004FE44C /* Region.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA1FE9217607AD004FE44C /* Region.storyboard */; };
 		F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50872164027C00B43F52 /* AppDelegate.swift */; };
 		F1AB508A2164027C00B43F52 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AB50892164027C00B43F52 /* PeopleViewController.swift */; };
@@ -50,20 +42,12 @@
 		9CBA1F5C21664102004FE44C /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 		9CBA1F5E21664B31004FE44C /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 		9CBA1F6C21675D30004FE44C /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
-		9CBA1FBB2170D1F5004FE44C /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9CBA1FBC2170D1F5004FE44C /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9CBA1FBD2170D1F5004FE44C /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9CBA1FBE2170D1F5004FE44C /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9CBA1FC52170D3E2004FE44C /* Person+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extensions.swift"; sourceTree = "<group>"; };
 		9CBA1FC72170D405004FE44C /* Country+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+Extensions.swift"; sourceTree = "<group>"; };
 		9CBA1FC92170D415004FE44C /* Continent+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Continent+Extensions.swift"; sourceTree = "<group>"; };
-		9CBA1FDB2175B89A004FE44C /* Region+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Region+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9CBA1FDC2175B89A004FE44C /* Region+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Region+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9CBA1FDF2175E39C004FE44C /* RegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
 		9CBA1FE12175E65F004FE44C /* Region+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Region+Extension.swift"; sourceTree = "<group>"; };
 		9CBA1FE32175F681004FE44C /* AddRegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegionViewController.swift; sourceTree = "<group>"; };
-		9CBA1FE52175F943004FE44C /* Continent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Continent+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9CBA1FE62175F943004FE44C /* Continent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Continent+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9CBA1FEA217607AD004FE44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Region.storyboard; sourceTree = "<group>"; };
 		F1AB50842164027C00B43F52 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AB50872164027C00B43F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,17 +124,9 @@
 		9CBA1FAC2170D1B6004FE44C /* CoreDataModel */ = {
 			isa = PBXGroup;
 			children = (
-				9CBA1FDB2175B89A004FE44C /* Region+CoreDataClass.swift */,
-				9CBA1FDC2175B89A004FE44C /* Region+CoreDataProperties.swift */,
 				9CBA1FE12175E65F004FE44C /* Region+Extension.swift */,
 				9CBA1FC92170D415004FE44C /* Continent+Extensions.swift */,
-				9CBA1FBB2170D1F5004FE44C /* Country+CoreDataClass.swift */,
-				9CBA1FE52175F943004FE44C /* Continent+CoreDataClass.swift */,
-				9CBA1FE62175F943004FE44C /* Continent+CoreDataProperties.swift */,
-				9CBA1FBC2170D1F5004FE44C /* Country+CoreDataProperties.swift */,
 				9CBA1FC72170D405004FE44C /* Country+Extensions.swift */,
-				9CBA1FBD2170D1F5004FE44C /* Person+CoreDataClass.swift */,
-				9CBA1FBE2170D1F5004FE44C /* Person+CoreDataProperties.swift */,
 				9CBA1FC52170D3E2004FE44C /* Person+Extensions.swift */,
 			);
 			path = CoreDataModel;
@@ -316,27 +292,19 @@
 				F1AB50A72169F16700B43F52 /* ISO3166.swift in Sources */,
 				F1AB509D2167E7B100B43F52 /* NSManagedObjectContext+Observers.swift in Sources */,
 				9CBA1F5F21664B31004FE44C /* AddPersonViewController.swift in Sources */,
-				9CBA1FE82175F943004FE44C /* Continent+CoreDataProperties.swift in Sources */,
 				9CBA1F5621660CC4004FE44C /* NSManagedObjectContext+Extensions.swift in Sources */,
-				9CBA1FC12170D1F5004FE44C /* Country+CoreDataClass.swift in Sources */,
-				9CBA1FE72175F943004FE44C /* Continent+CoreDataClass.swift in Sources */,
 				9CBA1FCA2170D415004FE44C /* Continent+Extensions.swift in Sources */,
 				F1AB508A2164027C00B43F52 /* PeopleViewController.swift in Sources */,
 				9CBA1F5A216640CB004FE44C /* PersonTableViewCell.swift in Sources */,
 				9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */,
 				9CBA1FC62170D3E2004FE44C /* Person+Extensions.swift in Sources */,
 				9CBA1FE02175E39C004FE44C /* RegionViewController.swift in Sources */,
-				9CBA1FC32170D1F5004FE44C /* Person+CoreDataClass.swift in Sources */,
 				F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */,
-				9CBA1FC42170D1F5004FE44C /* Person+CoreDataProperties.swift in Sources */,
 				9CBA1F6D21675D30004FE44C /* PersonDetailsViewController.swift in Sources */,
 				F1AB50902164027C00B43F52 /* PeopleModel.xcdatamodeld in Sources */,
 				9CBA1F582166222A004FE44C /* CoreDataTableViewDataSource.swift in Sources */,
-				9CBA1FDE2175B89A004FE44C /* Region+CoreDataProperties.swift in Sources */,
-				9CBA1FDD2175B89A004FE44C /* Region+CoreDataClass.swift in Sources */,
 				9CBA1FE22175E660004FE44C /* Region+Extension.swift in Sources */,
 				9CBA1FE42175F681004FE44C /* AddRegionViewController.swift in Sources */,
-				9CBA1FC22170D1F5004FE44C /* Country+CoreDataProperties.swift in Sources */,
 				9CBA1F482164D98E004FE44C /* Managed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

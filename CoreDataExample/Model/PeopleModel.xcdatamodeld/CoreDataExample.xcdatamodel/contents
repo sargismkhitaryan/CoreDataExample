@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Continent" representedClassName="Continent" parentEntity="Region" syncable="YES">
+    <entity name="Continent" representedClassName="Continent" parentEntity="Region" syncable="YES" codeGenerationType="class">
         <relationship name="countries" toMany="YES" deletionRule="Cascade" destinationEntity="Country" inverseName="continent" inverseEntity="Country" syncable="YES"/>
     </entity>
-    <entity name="Country" representedClassName="Country" parentEntity="Region" syncable="YES">
+    <entity name="Country" representedClassName="Country" parentEntity="Region" syncable="YES" codeGenerationType="class">
         <relationship name="continent" maxCount="1" deletionRule="Nullify" destinationEntity="Continent" inverseName="countries" inverseEntity="Continent" syncable="YES"/>
         <relationship name="people" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="country" inverseEntity="Person" syncable="YES"/>
     </entity>
-    <entity name="Person" representedClassName="Person" syncable="YES">
-        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="birthday" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
         <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="people" inverseEntity="Country" syncable="YES"/>
     </entity>
-    <entity name="Region" representedClassName="Region" isAbstract="YES" syncable="YES">
+    <entity name="Region" representedClassName="Region" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Continent" positionX="128.54296875" positionY="-263.25390625" width="128" height="60"/>
-        <element name="Country" positionX="-78.2421875" positionY="-262.62109375" width="128" height="75"/>
-        <element name="Person" positionX="-293.83984375" positionY="-277.45703125" width="128" height="90"/>
-        <element name="Region" positionX="16.1875" positionY="-516.51953125" width="128" height="60"/>
+        <element name="Continent" positionX="128.54296875" positionY="-263.25390625" width="128" height="58"/>
+        <element name="Country" positionX="-78.2421875" positionY="-262.62109375" width="128" height="73"/>
+        <element name="Person" positionX="-293.83984375" positionY="-277.45703125" width="128" height="88"/>
+        <element name="Region" positionX="16.1875" positionY="-516.51953125" width="128" height="58"/>
     </elements>
 </model>
