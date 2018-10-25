@@ -7,9 +7,9 @@
         <relationship name="continent" maxCount="1" deletionRule="Nullify" destinationEntity="Continent" inverseName="countries" inverseEntity="Continent" syncable="YES"/>
         <relationship name="people" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="country" inverseEntity="Person" syncable="YES"/>
     </entity>
-    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+    <entity name="Person" representedClassName="Person" syncable="YES">
         <attribute name="birthday" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="favoriteColors" optional="YES" attributeType="Transformable" customClassName="[Data]" syncable="YES"/>
+        <attribute name="favoriteDataColors" optional="YES" attributeType="Transformable" customClassName="[Data]" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="people" inverseEntity="Country" syncable="YES"/>
     </entity>

@@ -6,6 +6,7 @@
 //  Copyright © 2018 Sargis. All rights reserved.
 //
 
+import UIKit
 import CoreData
 import Foundation
 
@@ -19,6 +20,7 @@ extension Person: Managed {
         let person: Person = context.insertObject()
         person.birthday = date
         person.name = name
+        person.favoriteColors = [UIColor.black, UIColor.white]
         return person
     }
 }

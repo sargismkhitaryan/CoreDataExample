@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C964C272181E08100E39D7F /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C964C262181E08100E39D7F /* Array+Extensions.swift */; };
+		9C964C272181E08100E39D7F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C964C262181E08100E39D7F /* Extensions.swift */; };
+		9C964C2A2181F49C00E39D7F /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C964C282181F49C00E39D7F /* Person+CoreDataClass.swift */; };
+		9C964C2B2181F49C00E39D7F /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C964C292181F49C00E39D7F /* Person+CoreDataProperties.swift */; };
 		9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F3D2164C751004FE44C /* PersonStack.swift */; };
 		9CBA1F482164D98E004FE44C /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F472164D98E004FE44C /* Managed.swift */; };
 		9CBA1F5621660CC4004FE44C /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA1F5521660CC4004FE44C /* NSManagedObjectContext+Extensions.swift */; };
@@ -35,7 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C964C262181E08100E39D7F /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		9C964C262181E08100E39D7F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9C964C282181F49C00E39D7F /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C964C292181F49C00E39D7F /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9CBA1F3D2164C751004FE44C /* PersonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStack.swift; sourceTree = "<group>"; };
 		9CBA1F472164D98E004FE44C /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
 		9CBA1F5521660CC4004FE44C /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
@@ -78,7 +82,7 @@
 		9C964C252181E06200E39D7F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				9C964C262181E08100E39D7F /* Array+Extensions.swift */,
+				9C964C262181E08100E39D7F /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -134,6 +138,8 @@
 		9CBA1FAC2170D1B6004FE44C /* CoreDataModel */ = {
 			isa = PBXGroup;
 			children = (
+				9C964C282181F49C00E39D7F /* Person+CoreDataClass.swift */,
+				9C964C292181F49C00E39D7F /* Person+CoreDataProperties.swift */,
 				9CBA1FE12175E65F004FE44C /* Region+Extension.swift */,
 				9CBA1FC92170D415004FE44C /* Continent+Extensions.swift */,
 				9CBA1FC72170D405004FE44C /* Country+Extensions.swift */,
@@ -307,9 +313,11 @@
 				9CBA1FCA2170D415004FE44C /* Continent+Extensions.swift in Sources */,
 				F1AB508A2164027C00B43F52 /* PeopleViewController.swift in Sources */,
 				9CBA1F5A216640CB004FE44C /* PersonTableViewCell.swift in Sources */,
-				9C964C272181E08100E39D7F /* Array+Extensions.swift in Sources */,
+				9C964C272181E08100E39D7F /* Extensions.swift in Sources */,
 				9CBA1F3E2164C751004FE44C /* PersonStack.swift in Sources */,
+				9C964C2A2181F49C00E39D7F /* Person+CoreDataClass.swift in Sources */,
 				9CBA1FC62170D3E2004FE44C /* Person+Extensions.swift in Sources */,
+				9C964C2B2181F49C00E39D7F /* Person+CoreDataProperties.swift in Sources */,
 				9CBA1FE02175E39C004FE44C /* RegionViewController.swift in Sources */,
 				F1AB50882164027C00B43F52 /* AppDelegate.swift in Sources */,
 				9CBA1F6D21675D30004FE44C /* PersonDetailsViewController.swift in Sources */,
