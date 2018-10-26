@@ -8,6 +8,7 @@
         <relationship name="people" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="country" inverseEntity="Person" syncable="YES"/>
     </entity>
     <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="attribute" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="birthday" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="favoriteDataColors" optional="YES" attributeType="Transformable" customClassName="[Data]" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
@@ -19,7 +20,7 @@
     <elements>
         <element name="Continent" positionX="215.8125" positionY="-263.5" width="128" height="60"/>
         <element name="Country" positionX="-78.2421875" positionY="-262.62109375" width="128" height="73"/>
-        <element name="Person" positionX="-293.83984375" positionY="-277.45703125" width="128" height="103"/>
+        <element name="Person" positionX="-293.83984375" positionY="-277.45703125" width="128" height="118"/>
         <element name="Region" positionX="16.1875" positionY="-516.51953125" width="128" height="58"/>
     </elements>
 </model>
